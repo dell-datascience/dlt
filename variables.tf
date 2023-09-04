@@ -1,9 +1,11 @@
 locals {
-  data_lake_bucket = "dtc_data_lake"
+  data_lake_bucket = "de_data_lake"
 }
 
-variable "de-project-397922" {
+variable "project" {
   description = "Your GCP Project ID"
+  default = "de-project-397922"
+  type = string
 }
 
 variable "region" {
@@ -15,10 +17,11 @@ variable "region" {
 variable "storage_class" {
   description = "Storage class type for your bucket. Check official docs for more info."
   default = "STANDARD"
+  type = string
 }
 
 variable "BQ_DATASET" {
   description = "BigQuery Dataset that raw data (from GCS) will be written to"
+  default="trips_data_all"
   type = string
-  default = "trips_data_all"
 }
