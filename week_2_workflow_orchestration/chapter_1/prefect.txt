@@ -1,6 +1,0 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: osx-64
-prefect=2.10.4=pypi_0
-prefect-gcp=0.2.4=pypi_0
-prefect-sqlalchemy=0.2.2=pypi_0
