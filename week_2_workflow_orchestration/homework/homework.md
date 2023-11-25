@@ -9,7 +9,7 @@ Using the `etl_web_to_gcs.py` flow that loads taxi data into GCS as a guide, cre
 
 How many rows does that dataset have?
 
-* **447,770**
+* 447,770 ✅
 * 766,792
 * 299,234
 * 822,132
@@ -28,7 +28,7 @@ Using the flow in `etl_web_to_gcs.py`, create a deployment to run on the first o
 *: Represents the month field. The cron job will run in any month.
 *: Represents the day of the week field. The cron job will run on any day of the week.
 ```
-- **`0 5 1 * *`**
+- `0 5 1 * *` ✅
 - `0 0 5 1 *`
 - `5 * 1 0 *`
 - `* * 5 1 0`
@@ -49,10 +49,16 @@ Create a deployment for this flow to run in a local subprocess with local flow c
 Make sure you have the parquet data files for Yellow taxi data for Feb. 2019 and March 2019 loaded in GCS. Run your deployment to append this data to your BiqQuery table. How many rows did your flow code process?
 
 ```python
-create and apply deployment: prefect deployment build etl_gcs_to_gbq.py:main_flow -n "etl_gcs_gbq_homework" -a
+create and apply deployment: 
 
-prunn deployment: refect run main flow/etl_gcs_gbq_homework -p "months=[2,3]" -p "year=2020" -p "color=yellow"
+prefect deployment build etl_gcs_to_gbq.py:main_flow -n "etl_gcs_gbq_homework" -a
+```
 
+```python
+prunn deployment: 
+   
+prefect run main flow/etl_gcs_gbq_homework -p "months=[2,3]" -p "year=2020" -p "color=yellow"
+```
 # prefect deployment apply main_flow-deployment.yaml                 
 
 ```
