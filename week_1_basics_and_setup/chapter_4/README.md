@@ -57,7 +57,7 @@
 1. Initialize & configures the backend, install plugins/providers, & check out an existing configuration from a version control 
 
         terraform init 
-    
+
 2. Matche/preview local changes against a remote state, and proposes an Execution Plan
 
         terraform plan
