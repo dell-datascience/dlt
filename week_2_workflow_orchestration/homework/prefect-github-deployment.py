@@ -6,9 +6,10 @@ github_block = GitHub.load("github-block")
 
 deployment = Deployment.build_from_flow(
             flow=main_flow,
-            name='github-web-to-gcs-deployment',
+            name="github-homework-deploy",
+            version="1.0",
             storage=github_block,
-            entrypoint='/Users/air/Documents/a_zoom_data_engineer/week2/homework/etl_to_gcs.py:main_flow'
+            entrypoint='week_2_workflow_orchestration/homework/etl_to_gcs.py:actual_runner'
             )
 
 if __name__=='__main__':

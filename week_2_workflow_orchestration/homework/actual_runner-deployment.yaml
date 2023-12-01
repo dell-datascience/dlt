@@ -1,23 +1,17 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'actual runner'
 ###
-name: etl_to_gcp_homework
+name: etl_gcs_deployment
 description: null
 version: cdc6bc4297398c487b8ba401bcd669b3
 # The work queue that will handle this deployment's runs
 work_queue_name: default
-work_pool_name: default-agent-pool
+work_pool_name: null
 tags: []
 parameters: {}
 schedule: null
-is_schedule_active: true
+is_schedule_active: null
 infra_overrides: {}
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: actual runner
-manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -26,14 +20,17 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
-  _block_document_id: aa9f5b7d-3f7f-4234-abc3-0fe90823c3d3
-  _block_document_name: anonymous-8d815db0-41d6-4867-b0cd-cde6f11d069c
-  _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: actual runner
+manifest_path: null
 storage: null
-path: /Users/air/Documents/a_zoom_data_engineer/week2/homework
-entrypoint: etl_to_gcs.py:actual_runner
+path: /Users/air/Documents/a_zoom_data_engineer/Data_Engineering/week_2_workflow_orchestration/homework
+entrypoint: etl_to_gcs:actual_runner
 parameter_openapi_schema:
   title: Parameters
   type: object
@@ -55,6 +52,6 @@ parameter_openapi_schema:
   - year
   - color
   definitions: null
-timestamp: '2023-11-22T00:32:50.198152+00:00'
+timestamp: '2023-12-01T12:39:58.273059+00:00'
 triggers: []
 enforce_parameter_schema: null
