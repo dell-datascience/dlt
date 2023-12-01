@@ -29,7 +29,6 @@ Re represents an action within a Flow. For example, for an ETL we would have at 
 - **cache_key**: A function is specified that we should import as a library. It caches the result in the event of an error, so it doesn't need to be re-executed. `imported from prefect.tasks cache_key_fn=task_input_hash`
 
 - **cache_expiration**: Setting the length of time for which the cache will be saved. `cache_expiration=timedelta(days=1)`
-
     
         @task(retries=3, log_prints=True)
         def ingest_data(source):
