@@ -2,9 +2,6 @@
 
     1. go tp prefect cloud and create API keys
     
-        API Keys: pnu_qAPZT8DpmvaTDoTA5EPxjFFwLAycLS3fokcu
-        or run 
-        `prefect cloud login -k pnu_qAPZT8DpmvaTDoTA5EPxjFFwLAycLS3fokcu`
 
         2. create `docker block`, `bigquery block`, `gcs bucket block`, `gcp credentials`
 
