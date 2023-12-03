@@ -4,17 +4,18 @@
 
     a. create Dockerfile
 
-    ```docker
-    FROM prefecthq/prefect:2.7.7-python3.9
+        ```docker
+        FROM prefecthq/prefect:2.7.7-python3.9
 
-    COPY docker-requirement.txt .
+        COPY docker-requirement.txt .
 
-    RUN pip install -r docker-requirement.txt --trusted-host pypi.python.org --no-cache-dir
+        RUN pip install -r docker-requirement.txt --trusted-host pypi.python.org --no-cache-dir
 
-    COPY chapter_2 /opt/prefect/flows
+        COPY chapter_2 /opt/prefect/flows
 
-    COPY chapter_2/new_data /opt/prefect/data
-    ``` 
+        COPY chapter_2/new_data /opt/prefect/data
+        ``` 
+        
     b. build the docker image:
     `docker build -t albydel/prefect:DE .`
 
@@ -62,17 +63,17 @@ set parameters:
             docker_deploy.apply()
         ```
 
-        8.1. run the deployed task
-            `python docker_deployment`
+8.1. run the deployed task
+    `python docker_deployment`
 
-        8.2 check profile, shows that we are using the default profile
-            `prefect profile ls`
-        
-        8.3 use API end point to enable docker container to interact with prefect server
-            `prefect config set PREFECT_API_URL="http://127.0.0.1:4200/api"`
+8.2 check profile, shows that we are using the default profile
+    `prefect profile ls`
 
-        8.4 start the API agent: the agent picks up any queue and execute it
-            `prefect agent start --work-queue "default"`
+8.3 use API end point to enable docker container to interact with prefect server
+    `prefect config set PREFECT_API_URL="http://127.0.0.1:4200/api"`
 
-        8.5 Run the queue with parameter month=7
-            `prefect deployment run parent_flow_runner/docker-flow -p "month=7" -p "color=yellow" -p "year=2020"`
+8.4 start the API agent: the agent picks up any queue and execute it
+    `prefect agent start --work-queue "default"`
+
+8.5 Run the queue with parameter month=7
+    `prefect deployment run parent_flow_runner/docker-flow -p "month=7" -p "color=yellow" -p "year=2020"`

@@ -1,30 +1,29 @@
-1. Prefect cloud 
+# Prefect cloud 
 
-    1. go tp prefect cloud and create API keys
+1. Go to prefect cloud and create API keys
     
 
-        2. create `docker block`, `bigquery block`, `gcs bucket block`, `gcp credentials`
+2. create `docker block`, `bigquery block`, `gcs bucket block`, `gcp credentials`
 
-        3. create the deployment file and run deployment file
-        ```python
-        from prefect.deployments import Deployment 
-        from prefect.infrastructure.container import DockerContainer
-        from parameterized_flow import etl_grandparent_flow
+3. create the deployment file and run deployment file
+```python
+from prefect.deployments import Deployment 
+from prefect.infrastructure.container import DockerContainer
+from parameterized_flow import etl_grandparent_flow
 
-        docker_block =DockerContainer.load("zoomcontainer") ## NB: zoomcontainer is cloud bucket
+docker_block =DockerContainer.load("zoomcontainer") ## NB: zoomcontainer is cloud bucket
 
-        docker_deploy = Deployment.build_from_flow(
-                        flow=etl_grandparent_flow,
-                        name="docker-flow",
-                        infrastructure=docker_block
-                    )
+docker_deploy = Deployment.build_from_flow(
+                flow=etl_grandparent_flow,
+                name="docker-flow",
+                infrastructure=docker_block
+            )
 
-        if __name__=="__main__":
-            docker_deploy.apply()
+if __name__=="__main__":
+    docker_deploy.apply()
+```
 
-        ```
-
-        `python docker_deployment.py` : then you can see your flows in UI
+`python docker_deployment.py` : then you can see your flows in UI
 
             
 2. activate the agent
