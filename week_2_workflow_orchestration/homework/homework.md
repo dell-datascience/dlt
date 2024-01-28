@@ -69,7 +69,7 @@ prefect run 'main flow'/etl_gcs_gbq_homework -p "months=[2,3]" -p "year=2020" -p
 
 
 
-## Question 4. Github Storage Block
+## Question 4. Github Storage Block 
 
 Using the `web_to_gcs` script from the videos as a guide, you want to store your flow code in a GitHub repository for collaboration with your team. Prefect can look in the GitHub repo to find your flow code and read it. Create a GitHub storage block from the UI or in Python code and use that in your Deployment instead of storing your flow code locally or baking your flow code into a Docker image. 
 

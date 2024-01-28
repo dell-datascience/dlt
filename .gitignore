@@ -15,11 +15,25 @@
 /week_1_basics_and_setup/chapter_1/.ipynb_checkpoints
 /week_1_basics_and_setup/chapter_1/yellow_tripdata_2019_01.csv
 /week_1_basics_and_setup/chapter_2/.env
+/week_1_basics_and_setup/chapter_3/.env
 /week_1_basics_and_setup/chapter_3/data_pgadmin
 /week_1_basics_and_setup/chapter_3/ny_taxi_postgres_data
 
-/week_1_basics_and_setup/homework/output.csv
-/week_1_basics_and_setup/homework/ny_taxi_postgres_data
+/week_1_basics_and_setup/homework/2023/output.csv
+/week_1_basics_and_setup/homework/2023/ny_taxi_postgres_data
+
+/week_1_basics_and_setup/homework/2024/.terraform
+/week_1_basics_and_setup/homework/2024/.terraform/providers
+/week_1_basics_and_setup/homework/2024/.terraform/terraform.tfstate
+/week_1_basics_and_setup/homework/2024/.env
+/week_1_basics_and_setup/homework/2024/.terraform.lock.hcl
+/week_1_basics_and_setup/homework/2024/output2.csv
+/week_1_basics_and_setup/homework/2024/output2.csv.gz
+/week_1_basics_and_setup/homework/2024/plan
+/week_1_basics_and_setup/homework/2024/plan.txt
+/week_1_basics_and_setup/homework/2024/terraform.tfstate
+/week_1_basics_and_setup/homework/2024/terraform.tfstate.backup
+
 
 /week_1_basics_and_setup/ny_taxi_postgres_data
 /week_1_basics_and_setup/yellow_tripdata_2019-01.csv.gz
@@ -53,6 +67,13 @@ week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/provider
 /week_2_workflow_orchestration/chapter_4/__pycache__/parameterized_flow.cpython-311.pyc
 /week_2_workflow_orchestration/chapter_4/.prefectignore
 /week_2_workflow_orchestration/chapter_4/hello_world.py
+
+/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform
+/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/providers
+/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/terraform.tfstate
+/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.gitignore
+/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.prefectignore
+/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform.lock.hcl
 
 
 /week_2_workflow_orchestration/homework/__pycache__
