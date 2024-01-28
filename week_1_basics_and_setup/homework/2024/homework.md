@@ -82,7 +82,7 @@ WHERE DATE(lpep_pickup_datetime) BETWEEN '2019-09-18' AND '2019-09-18'
 Which was the pick up day with the largest trip distance
 Use the pick up time for your calculations.
 
-```
+```sql
 SELECT  DATE(lpep_pickup_datetime) AS pickup_day, SUM(trip_distance)
 FROM public.green_tripdata_2019_09
 GROUP BY 1
@@ -161,6 +161,15 @@ After updating the main.tf and variable.tf files run:
 
 ```
 terraform apply
+```
+
+```shell
+google_bigquery_dataset.dataset: Creating...
+google_storage_bucket.data-lake-bucket: Creating...
+google_bigquery_dataset.dataset: Creation complete after 1s [id=projects/verdant-catcher-397416/datasets/trips_data_all]
+google_storage_bucket.data-lake-bucket: Creation complete after 2s [id=de_data_lake_2024_verdant-catcher-397416]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
 Paste the output of this command into the homework submission form.
