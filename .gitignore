@@ -95,3 +95,4 @@ week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/provider
 /week_2_workflow_orchestration/chapter_1/install.txt
 
 /week_2_workflow_orchestration/mage/gcp.json
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.terraform/terraform.tfstate
