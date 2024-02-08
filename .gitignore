@@ -68,26 +68,30 @@ week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/provider
 /week_2_workflow_orchestration/chapter_4/.prefectignore
 /week_2_workflow_orchestration/chapter_4/hello_world.py
 
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/providers
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform/terraform.tfstate
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.gitignore
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.prefectignore
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/.terraform.lock.hcl
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.terraform
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.terraform/providers
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.terraform/terraform.tfstate
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.gitignore
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.prefectignore
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/.terraform.lock.hcl
+/week_2_workflow_orchestration/homework/2023/__pycache__
+/week_2_workflow_orchestration/homework/2023/new_data
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/plan
 
+# /week_2_workflow_orchestration/homework/__pycache__
+# # /week_2_workflow_orchestration/homework/new_data
+# /week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.terraform 
+# /week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.gitignore 
+# /week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.prefectignore 
+# /week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.terraform.lock.hcl
 
-/week_2_workflow_orchestration/homework/__pycache__
-/week_2_workflow_orchestration/homework/new_data
-/week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.terraform 
-/week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.gitignore 
-/week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.prefectignore 
-/week_2_workflow_orchestration/q1/homework/orchestrations_gcp/.terraform.lock.hcl
-
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/plan
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/terraform.tfstate
-/week_2_workflow_orchestration/homework/q1/orchestrations_gcp/terraform.tfstate.backup
+# /week_2_workflow_orchestration/homework/q1/orchestrations_gcp/plan
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/terraform.tfstate
+/week_2_workflow_orchestration/homework/2023/q1/orchestrations_gcp/terraform.tfstate.backup
 /week_2_workflow_orchestration/homework/.prefectignore
 /week_2_workflow_orchestration/homework/main.txt
 
 /week_2_workflow_orchestration/chapter_2/orchestrations_gcp/.terraform
 /week_2_workflow_orchestration/chapter_1/install.txt
+
+/week_2_workflow_orchestration/mage/gcp.json

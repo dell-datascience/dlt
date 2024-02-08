@@ -59,7 +59,7 @@ Download this data and put it into Postgres (with jupyter notebooks or with a pi
 
 ## Question 3. Count records 
 
-How many taxi trips were totally made on 1
+How many taxi trips were totally made on September 18th 2019?
 
 Tip: started and finished on 2019-09-18. 
 
