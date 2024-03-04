@@ -14,3 +14,5 @@ config.toml
 dlt/*
 /dlt_ipykernel_launcher.duckdb
 /dlt_ipykernel_launcher.duckdb.wal
+dlt_project/dlt/mydata/_dlt_pipeline_state/*
+dlt_project/dlt/mydata/users/*
